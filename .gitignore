@@ -1,0 +1,34 @@
+# Compiled object files
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Various IDEs and editors
+.vscode/
+.vs/
+*.code-workspace
+*.sublime-*
+*.swp
+*~
+*.suo
+*.user
+*.userprefs
+*.args
+*.pidb
+*.sdf
+*.sln.docstates
+
+# Makefile generated files
+Makefile.in
+Makefile
+
+# Build output directory
+bin/
+build/
