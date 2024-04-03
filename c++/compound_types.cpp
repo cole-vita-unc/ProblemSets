@@ -3,7 +3,17 @@
 using namespace std;
 
 // Implement a program to reverse the elements of an integer array in-place
-// void reverseInPlace(int arr[]){ //Naming convention for functions?
+void reverseInPlace(int arr[], int length){
+    for(int i = 0; i < length / 2; i++){
+        int temp = arr[i];
+        arr[i] = arr[length - 1 - i];
+        arr[length - 1 - i] = temp;
+    }
+    //Print resulting array
+    for(int i = 0; i < length; ++i) {
+        std::cout << arr[i] << " ";
+    }
+}
 
 
 // Implement a function named isPalindrome that checks whether a string received as an
@@ -205,5 +215,8 @@ int main(){
 
         //isPalindrome
     // cout << isPalindrome("nurses run") << endl;
-    
+
+        //reverseInPlace
+    int arr[] = {1,2,3,4,5};
+    reverseInPlace(arr,5);
 }
