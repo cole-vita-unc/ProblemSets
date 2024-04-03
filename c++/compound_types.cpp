@@ -15,7 +15,6 @@ void reverseInPlace(int arr[], int length){
     }
 }
 
-
 // Implement a function named isPalindrome that checks whether a string received as an
 // argument is a palindrome or not. The function should not use generic algorithms.
 
@@ -57,6 +56,21 @@ int integerConvert(string str){
 
     return converted;
 
+}
+
+// Write a function that replaces all uppercase characters in a C-style string (char*) with
+// their lowercase equivalents. The prototype of the function should be: void
+// to_lower(char* s). 
+
+void to_lower(char* s) {
+    if (s == nullptr) return; // Check for null pointer
+
+    for (int i = 0; s[i] != '\0'; ++i) {
+        if (s[i] >= 'A' && s[i] <= 'Z') {
+            // Convert uppercase to lowercase by adding the difference between 'a' and 'A'
+            s[i] = s[i] + ('a' - 'A');
+        }
+    }
 }
 
 // It seems reasonable to think that multiplying a string by a number involves repeating
